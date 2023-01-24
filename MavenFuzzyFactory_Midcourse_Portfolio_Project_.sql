@@ -1,3 +1,11 @@
+MAVEN FUZZY FACTORY 
+Analyzing & Optimising business's marketing channels,website and product portfolio.
+
+THE SITUATION:Maven fuzzy factory has been live for 8 months and the CEOhas to present company performance report to the board next week.
+
+THE OBJECTIVE:Extract & analyze website traffic and performance data to quantify company's growth and to tell the story of how you have been able to generate that
+growth.
+
 USE mavenfuzzyfactory;
 
 /*
