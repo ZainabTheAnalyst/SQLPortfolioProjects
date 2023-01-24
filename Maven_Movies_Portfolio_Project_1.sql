@@ -1,13 +1,13 @@
 
-MAVEN MOVIES 
+MAVEN MOVIES RENTAL ANALYSIS
 My Uncle Jimmy and I purchased Maven Movies, a brick-and-mortar DVD Rental business.
 Uncle Jimmy puts up the money, and I oversee the day-to-day operations.
 
 THE SITUATION: The company's insurance policy is up for renewal & the insurance company's underwriters need some updated information from us before they issue
-a new policy. 
+a new policy.
+
 THE OBJECTIVE: Use SQL to:
 Extract & Analyze data from various tables in the Maven movie dataset to answer the underwriters' questions.
-
 
 use mavenmovies;
 
