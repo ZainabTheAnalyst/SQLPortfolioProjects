@@ -1,3 +1,12 @@
+MAVEN MOVIES RENTAL ANALYSIS 
+
+THE SITUATION:You and your business partner were recently approached by another local business owner interested in purchasing Maven Movies.
+He primarily owns restaurants and bars, so he has many questions for you about your business and the rental business.
+His offer seems very generous, so that you will entertain his questions.
+
+THE OBJECTIVE:Use MySQL to leverage your SQL skills to extract and analyze data from various tables in the Maven Movies database to answer your potential 
+acquirer’s questions.
+
 /* 
 1. My partner and I want to come by each of the stores in person and meet the managers. 
 Please send over the managers’ names at each store, with the full address 
