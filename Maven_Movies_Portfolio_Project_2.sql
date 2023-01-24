@@ -32,7 +32,7 @@ Please pull together a list of each inventory item you have stocked, including t
 the inventory_id, the name of the film, the film’s rating, its rental rate and replacement cost. 
 */
 SELECT 
-	  inventory.store_id,
+      inventory.store_id,
       inventory.inventory_id,
       film. title AS film_title,
       film.rating AS film_rating,
