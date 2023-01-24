@@ -1,5 +1,13 @@
--- FINAL COURSE PROJECT 
--- Maven Fuzzy Factory
+MAVEN FUZZY FACTORY 
+Analyzing & Optimising business's marketing channels,website and product portfolio.
+
+THE SITUATION: The CEO is close to securing a second round of funding & she needs your help to tell a compelling story of your company's 
+rapid growth to the investors.
+
+THE OBJECTIVE: Use SQL to extract and analyze website traffic performance data. Then dive into the marketing channel activities and the website 
+improvements that have contribute to company's success to date.
+
+
 Use mavenfuzzyfactory;
 /*
 1. First, I’d like to show our volume growth. Can you pull overall session and order volume, 
@@ -172,7 +180,8 @@ FROM primary_products
 		ON order_items.order_id = primary_products.order_id
         AND order_items.is_primary_item = 0 -- only bringing in cross-sells
 ) AS primary_w_cross_sell
-GROUP BY 1; -- Product 4 was cross sold more to all three of the other products probably cause it was sold at a lower price so it will contribute to higher AOV for the business.
+GROUP BY 1; -- Product 4 was cross sold more to all three of the other products probably cause it was sold at a lower price so it will contribute to 
+	       higher AOV for the business.
 
 
 
