@@ -207,14 +207,6 @@ ORDER BY
 	GROUP BY 
 	website_session_id; 
 
-		
-
-
-
-
-
- 
-
 -- then this would produce the final output, part 1
 SELECT
 	CASE 
@@ -232,9 +224,6 @@ SELECT
 FROM session_level_made_it_flagged 
 GROUP BY 1
 ;
-
-
-
 -- then this as final output part 2 - click rates
 
 SELECT
