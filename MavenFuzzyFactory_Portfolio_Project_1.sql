@@ -185,8 +185,7 @@ SELECT
     MAX(billing_page) AS billing_made_it,
     MAX(thankyou_page) AS thankyou_made_it
 FROM(
-SELECT
-	ws.website_session_id, 
+SELECT 	ws.website_session_id, 
     wp.pageview_url, 
     -- wp.created_at AS pageview_created_at, 
     CASE WHEN pageview_url = '/home' THEN 1 ELSE 0 END AS homepage,
@@ -198,19 +197,21 @@ SELECT
     CASE WHEN pageview_url = '/billing' THEN 1 ELSE 0 END AS billing_page,
     CASE WHEN pageview_url = '/thank-you-for-your-order' THEN 1 ELSE 0 END AS thankyou_page
 FROM website_sessions AS ws
-	LEFT JOIN website_pageviews AS wp
-		ON ws.website_session_id = wp.website_session_id
+	LEFT JOIN website_pageviews AS wp ON ws.website_session_id = wp.website_session_id
 WHERE ws.utm_source = 'gsearch' 
 	AND ws.utm_campaign = 'nonbrand' 
-    AND ws.created_at < '2012-07-28'
-		AND ws.created_at > '2012-06-19'
+        AND ws.created_at < '2012-07-28'
+        AND ws.created_at > '2012-06-19'	
 ORDER BY 
-	ws.website_session_id,
-    wp.created_at
-) AS pageview_level
+	ws.website_session_id,  wp.created_at) AS pageview_level
+	GROUP BY 
+	website_session_id; 
 
-GROUP BY 
-	website_session_id;
+		
+
+
+
+
 
  
 
